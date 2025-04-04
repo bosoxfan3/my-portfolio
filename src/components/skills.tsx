@@ -53,7 +53,7 @@ const icons: IconEntry[] = [
 
 const Skills = () => {
     return (
-        <section className="py-8">
+        <section className="pb-6 lg:order-2">
             <h2 className="text-2xl font-semibold text-center mb-6">
                 Tech Stack
             </h2>
@@ -65,7 +65,7 @@ const Skills = () => {
                     return (
                         <div
                             key={label}
-                            className="flex flex-col items-center text-center text-gray-700 hover:text-blue-500 transition-colors duration-300"
+                            className="flex flex-col items-center text-center text-gray-700"
                             title={label}
                         >
                             <IconComponent className="text-4xl" />
