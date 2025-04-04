@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => (
-    <nav>
-        <ul>
+    <nav className="w-full bg-[#EBECF5] px-6 py-3">
+        <ul className="flex justify-end gap-8">
             <li>
-                <Link to="/">Home</Link>
+                <Link to="/">Bio</Link>
             </li>
             <li>
                 <Link to="/projects">Projects</Link>

@@ -6,7 +6,7 @@ import Contact from './pages/contact';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 
-const App: React.FC = () => {
+const App = () => {
     return (
         <Router>
             <Navbar />
