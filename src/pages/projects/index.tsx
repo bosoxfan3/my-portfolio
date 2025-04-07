@@ -53,7 +53,7 @@ const Projects = () => (
             />
             <ProjectCard
                 title="Article Page Redesign"
-                image="/assets/article/main.png"
+                image="/assets/articles/main.png"
                 shortDescription="Modernized our longform content experience with performance in mind and reusable component systems. Created components that authors could quickly embed to enhace their content."
                 route="/projects/articles"
             />
