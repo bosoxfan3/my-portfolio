@@ -1,102 +1,131 @@
 import { Link } from 'react-router-dom';
+import Carousel from '../../components/carousel';
+import Highlights from '../../components/highlights';
 
-export default function ExpertPicksProject() {
-    return (
-        <div className="max-w-4xl mx-auto px-4 py-12">
-            <Link
-                to="/projects"
-                className="text-blue-500 hover:underline mb-4 block"
-            >
-                ← Back to Projects
-            </Link>
+const images = [
+    {
+        src: '/assets/expert-picks/main.png',
+        alt: 'The main module of the expert picks page',
+    },
+    {
+        src: '/assets/expert-picks/detail.png',
+        alt: 'A partial view of what a user sees when they click into a game',
+    },
+    {
+        src: '/assets/expert-picks/modal.png',
+        alt: 'The modal that pops up when a user clicks a game',
+    },
+    {
+        src: '/assets/expert-picks/suggested.png',
+        alt: 'Suggested experts module on the sidebar',
+    },
+    {
+        src: '/assets/expert-picks/popular.png',
+        alt: 'Popular games module from the sidebar',
+    },
+    {
+        src: '/assets/expert-picks/experts.png',
+        alt: 'A sample of the table from the top experts page',
+    },
+    {
+        src: '/assets/expert-picks/following.png',
+        alt: 'What a user sees in their following feed if experts they follow have made picks',
+    },
+];
 
-            <h1 className="text-3xl font-bold mb-2">Expert Picks Page</h1>
-            <p className="text-zinc-600 dark:text-zinc-400 mb-6">
-                Built with React, Tailwind CSS, and TypeScript
+const ExpertPicks = () => (
+    <div className="content">
+        <Link
+            to="/projects"
+            className="text-blue-500 hover:underline mb-4 block"
+        >
+            Back to Projects
+        </Link>
+        <h1 className="text-4xl font-bold mb-2">Expert Picks Pages</h1>
+        <p className="text-zinc-600 mb-2 font-bold">
+            Built from scratch using React, TypeScript, and Tailwind CSS
+        </p>
+        <p className="text-zinc-600 mb-6">
+            A real-time, interactive feed of betting picks contributed by a mix
+            of experts and algorithms, with custom filtering, sorting, and
+            visual context.
+        </p>
+        <Carousel images={images} />
+        <section className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">Overview</h2>
+            <p>
+                The Expert Picks pages aggregate bets and insights from analysts
+                and models, providing a centralized view of expert-backed picks.
+                You can also see a timeline of bets from the experts you're
+                following, and find new experts to follow.
             </p>
+        </section>
+        <section className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">My Contributions</h2>
+            <ul className="list-disc list-inside space-y-1">
+                <li>
+                    I led this project from 0 to deployment with 1 designer, 1
+                    PM, and 1 other frontend engineer
+                </li>
+                <li>
+                    Designed and built the page layout and all UI components
+                    from scratch
+                </li>
+                <li>Integrated picks and odds data via internal REST APIs</li>
+                <li>
+                    Built in the ability to directly clone an expert's pick as
+                    well as add emojis
+                </li>
+                <li>
+                    Created filter and sort functionality with sticky header
+                    controls
+                </li>
+                <li>
+                    Handled edge cases like postponed games, invalid bets, and
+                    empty states
+                </li>
+            </ul>
+        </section>
+        <section className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">
+                Challenges & Solutions
+            </h2>
+            <ul className="list-disc list-inside space-y-1">
+                <li>
+                    Built fully responsive layout for mobile, tablet, and
+                    desktop views
+                </li>
+                <li>
+                    Optimized performance through lazy loading and memoization
+                </li>
+                <li>
+                    Maintained a high level of test coverage and accessibility
+                    compliance
+                </li>
+                <li>
+                    Managed fast-changing state data (odds, game data,
+                    follow/unfollow, emoji like/unlike, etc.) without UI flicker
+                </li>
+            </ul>
+        </section>
+        <a
+            href="https://www.actionnetwork.com/picks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mb-6"
+        >
+            View Live
+        </a>
+        <Highlights
+            highlights={[
+                'React',
+                'TypeScript',
+                'Tailwind',
+                'REST API',
+                'Responsive Design',
+            ]}
+        />
+    </div>
+);
 
-            <img
-                src="/images/nba-picks-full.png"
-                alt="NBA Picks Page"
-                className="rounded-xl shadow mb-8"
-            />
-
-            <section className="mb-6">
-                <h2 className="text-xl font-semibold mb-2">💡 Overview</h2>
-                <p>
-                    The NBA Picks page helps users find expert picks for daily
-                    NBA matchups. I was the primary frontend developer
-                    responsible for building this page from scratch and bringing
-                    designs to life.
-                </p>
-            </section>
-
-            <section className="mb-6">
-                <h2 className="text-xl font-semibold mb-2">
-                    🔨 My Contributions
-                </h2>
-                <ul className="list-disc list-inside space-y-1">
-                    <li>Built the layout using Tailwind and responsive grid</li>
-                    <li>
-                        Created reusable components (pick cards, filters,
-                        headers)
-                    </li>
-                    <li>
-                        Connected frontend to REST APIs and handled loading
-                        states
-                    </li>
-                    <li>
-                        Worked closely with designers for pixel-perfect
-                        implementation
-                    </li>
-                </ul>
-            </section>
-
-            <section className="mb-6">
-                <h2 className="text-xl font-semibold mb-2">
-                    🚧 Challenges & Solutions
-                </h2>
-                <ul className="list-disc list-inside space-y-1">
-                    <li>
-                        Optimized rendering performance for pages with large
-                        amounts of pick data
-                    </li>
-                    <li>
-                        Ensured mobile usability across various device widths
-                        (iPhone 5–Pro Max)
-                    </li>
-                    <li>
-                        Handled conditional rendering for premium vs free picks
-                    </li>
-                </ul>
-            </section>
-
-            <section className="mb-6">
-                <h2 className="text-xl font-semibold mb-2">🔧 Tech Stack</h2>
-                <div className="flex flex-wrap gap-2">
-                    <span className="bg-zinc-200 dark:bg-zinc-700 text-sm px-2 py-1 rounded">
-                        React
-                    </span>
-                    <span className="bg-zinc-200 dark:bg-zinc-700 text-sm px-2 py-1 rounded">
-                        TypeScript
-                    </span>
-                    <span className="bg-zinc-200 dark:bg-zinc-700 text-sm px-2 py-1 rounded">
-                        Tailwind CSS
-                    </span>
-                    <span className="bg-zinc-200 dark:bg-zinc-700 text-sm px-2 py-1 rounded">
-                        REST API
-                    </span>
-                </div>
-            </section>
-
-            <a
-                href="https://www.actionnetwork.com/picks"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-            >
-                View Live Project
-            </a>
-        </div>
-    );
-}
+export default ExpertPicks;
