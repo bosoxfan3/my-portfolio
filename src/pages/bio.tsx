@@ -12,7 +12,7 @@ const Bio = () => (
                 </h1>
                 <div className="flex justify-center pb-6">
                     <img
-                        src="/assets/profile.jpg"
+                        src={`${process.env.PUBLIC_URL}/assets/profile.jpg`}
                         alt="Profile Pic of Daniel and his dog"
                         width="300px"
                         className="rounded-[50%]"
@@ -38,7 +38,10 @@ const Bio = () => (
                     <Link to="/projects">See My Work</Link>
                 </div>
                 <div className="text-center text-lg pb-6 font-bold underline hover:text-blue-500 hover:cursor-pointer transition-colors duration-300">
-                    <a href="/DanielAcquestaResume.pdf" download>
+                    <a
+                        href={`${process.env.PUBLIC_URL}/DanielAcquestaResume.pdf`}
+                        download
+                    >
                         Download My Resume
                     </a>
                 </div>

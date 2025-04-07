@@ -22,7 +22,7 @@ const Contact = () => (
                     LinkedIn
                 </a>
                 <a
-                    href="/DanielAcquestaResume.pdf"
+                    href={`${process.env.PUBLIC_URL}/DanielAcquestaResume.pdf`}
                     download
                     className="hover:text-blue-500 transition-colors duration-300"
                 >

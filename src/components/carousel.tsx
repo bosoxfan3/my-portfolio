@@ -26,7 +26,7 @@ const Carousel = ({ images }: CarouselProps) => {
         <div className="flex flex-col justify-center items-center gap-4">
             <div className="w-[400px] h-[300px] flex items-center justify-center">
                 <img
-                    src={image.src}
+                    src={`${process.env.PUBLIC_URL}${image.src}`}
                     alt={image.alt}
                     className="max-w-full max-h-full object-contain"
                 />
