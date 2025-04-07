@@ -23,19 +23,21 @@ const Carousel = ({ images }: CarouselProps) => {
     };
 
     return (
-        <div>
-            <img
-                src={image.src}
-                alt={image.alt}
-                className="rounded-xl shadow mb-6"
-            />
-            {image.caption && <p>{image.caption}</p>}
+        <div className="flex flex-col justify-center items-center gap-4">
+            <div className="w-[400px] h-[300px] flex items-center justify-center">
+                <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="max-w-full max-h-full object-contain"
+                />
+            </div>
+            <p className="font-medium">{image?.caption || image.alt}</p>
             <button
                 type="button"
                 className="px-4 py-2 bg-zinc-200 rounded hover:bg-zinc-300 mb-6"
                 onClick={changeImage}
             >
-                Next Photo
+                Next Screenshot
             </button>
         </div>
     );
