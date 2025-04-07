@@ -6,7 +6,7 @@ import Socials from '../components/profiles';
 
 const Home = () => {
     return (
-        <div className="bg-[#F7F8FD] p-8 grow">
+        <div className="content">
             <div className="lg:grid lg:grid-cols-2">
                 <div>
                     <h1 className="text-4xl font-bold text-center pb-6">
@@ -36,10 +36,10 @@ const Home = () => {
                         APIs. I'm looking for full time front end or full stack
                         roles in the San Francisco Bay Area.
                     </p>
-                    <div className="text-center text-lg pb-6 font-bold underline hover:cursor-pointer">
+                    <div className="text-center text-lg pb-6 font-bold underline hover:text-blue-500 transition-colors duration-300">
                         <Link to="/projects">See My Work</Link>
                     </div>
-                    <div className="text-center text-lg pb-6 font-bold underline hover:cursor-pointer">
+                    <div className="text-center text-lg pb-6 font-bold underline hover:text-blue-500 hover:cursor-pointer transition-colors duration-300">
                         <a href="/DanielAcquestaResume.pdf" download>
                             Download My Resume
                         </a>

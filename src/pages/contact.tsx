@@ -1,17 +1,15 @@
-import React from 'react';
-
-export default function Contact() {
-    return (
-        <div className="max-w-xl mx-auto text-center py-20 px-4">
-            <h1 className="text-3xl font-bold mb-6">Get in Touch</h1>
-            <p className="text-lg text-zinc-600 mb-8">
+const Contact = () => (
+    <div className="content text-center flex justify-center items-center">
+        <div>
+            <h1 className="text-4xl font-bold mb-6">Get in Touch</h1>
+            <p className="text-lg text-zinc-600 mb-6">
                 I'm always open to talking about projects, collaboration, or
                 just chatting tech.
             </p>
-            <div className="flex justify-center gap-6 text-blue-600 text-lg font-medium">
+            <div className="flex justify-center gap-6 text-lg pb-6 font-bold underline">
                 <a
                     href="mailto:dgacquesta@gmail.com"
-                    className="hover:underline"
+                    className="hover:text-blue-500 transition-colors duration-300"
                 >
                     Email
                 </a>
@@ -19,18 +17,20 @@ export default function Contact() {
                     href="https://linkedin.com/in/daniel-acquesta"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:text-blue-500 transition-colors duration-300"
                 >
                     LinkedIn
                 </a>
                 <a
                     href="/DanielAcquestaResume.pdf"
                     download
-                    className="hover:underline"
+                    className="hover:text-blue-500 transition-colors duration-300"
                 >
                     Download Résumé
                 </a>
             </div>
         </div>
-    );
-}
+    </div>
+);
+
+export default Contact;

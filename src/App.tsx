@@ -1,7 +1,8 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/home';
+import Bio from './pages/bio';
 import Projects from './pages/projects';
+import Betslip from './pages/projects/betslip';
+import MyAction from './pages/projects/my-action';
 import ExpertPicks from './pages/projects/expert-picks';
 import OddsCalculators from './pages/projects/odds-calculators';
 import Articles from './pages/projects/articles';
@@ -15,8 +16,11 @@ const App = () => {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Bio />} />
+
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/projects/betslip" element={<Betslip />} />
+                <Route path="/projects/my-action" element={<MyAction />} />
                 <Route
                     path="/projects/expert-picks"
                     element={<ExpertPicks />}
@@ -27,6 +31,7 @@ const App = () => {
                 />
                 <Route path="/projects/articles" element={<Articles />} />
                 <Route path="/projects/odds-tools" element={<OddsTools />} />
+
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />

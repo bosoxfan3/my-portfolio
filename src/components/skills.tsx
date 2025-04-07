@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     SiReact,
     SiTypescript,
@@ -51,31 +52,27 @@ const icons: IconEntry[] = [
     { icon: FaDocker, label: 'Docker' },
 ];
 
-const Skills = () => {
-    return (
-        <section className="pb-6 lg:order-2">
-            <h2 className="text-2xl font-semibold text-center mb-6">
-                Tech Stack
-            </h2>
-            <div className="flex flex-wrap justify-center gap-6">
-                {icons.map(({ icon, label }) => {
-                    const IconComponent = icon as React.FC<{
-                        className?: string;
-                    }>;
-                    return (
-                        <div
-                            key={label}
-                            className="flex flex-col items-center text-center text-gray-700"
-                            title={label}
-                        >
-                            <IconComponent className="text-4xl" />
-                            <span className="mt-2 text-sm">{label}</span>
-                        </div>
-                    );
-                })}
-            </div>
-        </section>
-    );
-};
+const Skills = () => (
+    <section className="pb-6 lg:order-2">
+        <h2 className="text-2xl font-semibold text-center mb-6">Tech Stack</h2>
+        <div className="flex flex-wrap justify-center gap-6">
+            {icons.map(({ icon, label }) => {
+                const IconComponent = icon as React.FC<{
+                    className?: string;
+                }>;
+                return (
+                    <div
+                        key={label}
+                        className="flex flex-col items-center text-center text-gray-700"
+                        title={label}
+                    >
+                        <IconComponent className="text-4xl" />
+                        <span className="mt-2 text-sm">{label}</span>
+                    </div>
+                );
+            })}
+        </div>
+    </section>
+);
 
 export default Skills;
