@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Carousel from '../../components/carousel';
+import Highlights from '../../components/highlights';
 
 const images = [
     {
@@ -104,35 +105,18 @@ const Betslip = () => (
                 </li>
             </ul>
         </section>
-        <section className="mb-6">
-            <h2 className="text-xl font-semibold mb-2">Tech Stack</h2>
-            <div className="flex flex-wrap gap-2">
-                <span className="bg-zinc-200 text-sm px-2 py-1 rounded">
-                    React
-                </span>
-                <span className="bg-zinc-200 text-sm px-2 py-1 rounded">
-                    TypeScript
-                </span>
-                <span className="bg-zinc-200 text-sm px-2 py-1 rounded">
-                    Emotion
-                </span>
-                <span className="bg-zinc-200 text-sm px-2 py-1 rounded">
-                    REST API
-                </span>
-                <span className="bg-zinc-200 text-sm px-2 py-1 rounded">
-                    Jest
-                </span>
-                <span className="bg-zinc-200 text-sm px-2 py-1 rounded">
-                    Cypress
-                </span>
-                <span className="bg-zinc-200 text-sm px-2 py-1 rounded">
-                    Unstated Next
-                </span>
-                <span className="bg-zinc-200 text-sm px-2 py-1 rounded">
-                    SWR
-                </span>
-            </div>
-        </section>
+        <Highlights
+            highlights={[
+                'React',
+                'TypeScript',
+                'Emotion',
+                'REST API',
+                'Jest',
+                'Cypress',
+                'Unstated Next',
+                'SWR',
+            ]}
+        />
     </div>
 );
 
