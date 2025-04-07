@@ -38,8 +38,11 @@ const Betslip = () => (
             Back to Projects
         </Link>
         <h1 className="text-4xl font-bold mb-2">Betslip & Quickslip</h1>
-        <p className="text-zinc-600 dark:text-zinc-400 mb-6">
+        <p className="text-zinc-600 mb-2 font-bold">
             Built with React, TypeScript, and Emotion (a CSS-in-JS library)
+        </p>
+        <p className="text-zinc-600 mb-6">
+            The place to create, edit, or delete your picks
         </p>
         <Carousel images={images} />
         <section className="mb-6">

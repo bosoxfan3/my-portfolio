@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectCard from '../../components/project-card';
 
 const Projects = () => {
