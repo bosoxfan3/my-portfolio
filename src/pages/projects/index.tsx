@@ -20,7 +20,7 @@ const Projects = () => (
             tasks, but I used every language or tool listed on my bio page
             during my time at Action Network
         </p>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProjectCard
                 title="Betslip & Quickslip Implementation"
                 image="/assets/betslip/main.png"

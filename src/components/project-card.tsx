@@ -15,7 +15,7 @@ const ProjectCard = ({
 }: FeatureCardProps) => (
     <Link
         to={route}
-        className="group block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-white dark:bg-zinc-900"
+        className="group block border border-gray-300 rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-white dark:bg-zinc-900"
     >
         <img
             src={`${process.env.PUBLIC_URL}${image}`}
