@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 
 type CarouselProps = {
     images: Array<{
@@ -11,27 +11,27 @@ type CarouselProps = {
 const Carousel = ({ images }: CarouselProps) => {
     const [index, setIndex] = useState(0);
 
-    const image = useMemo(() => images[index], [images, index]);
-
     const changeImage = () => {
-        const newIndex = index + 1;
-        if (newIndex > images.length - 1) {
-            setIndex(0);
-        } else {
-            setIndex(newIndex);
-        }
+        setIndex((prev) => (prev + 1) % images.length);
     };
 
     return (
         <div className="flex flex-col justify-center items-center gap-4">
-            <div className="w-[400px] h-[300px] flex items-center justify-center">
-                <img
-                    src={`${process.env.PUBLIC_URL}${image.src}`}
-                    alt={image.alt}
-                    className="max-w-full max-h-full object-contain"
-                />
+            <div className="relative w-[400px] h-[300px]">
+                {images.map((image, i) => (
+                    <img
+                        key={i}
+                        src={`${process.env.PUBLIC_URL}${image.src}`}
+                        alt={image.alt}
+                        className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
+                            i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                        }`}
+                    />
+                ))}
             </div>
-            <p className="font-medium">{image?.caption || image.alt}</p>
+            <p className="font-medium">
+                {images[index]?.caption || images[index].alt}
+            </p>
             <button
                 type="button"
                 className="px-4 py-2 bg-zinc-200 rounded hover:bg-zinc-300 mb-6"
