@@ -30,14 +30,24 @@ const PromptMusic = () => (
             Back to Projects
         </Link>
         <h1 className="text-4xl font-bold mb-2">Prompt Music</h1>
-        <a
-            className="text-blue-600 block pb-2 font-bold"
-            href="https://prompt-music.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-        >
-            Live Project
-        </a>
+        <div className="pb-2">
+            <a
+                className="text-blue-600 font-bold mr-6"
+                href="https://prompt-music.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Live Project
+            </a>
+            <a
+                className="text-blue-600 font-bold"
+                href="https://github.com/bosoxfan3/prompt-music"
+                target="_blank"
+                rel="noreferrer"
+            >
+                GitHub Repository
+            </a>
+        </div>
         <p className="text-zinc-600 mb-2 font-bold">
             Built with React, TypeScript, CSS, Spotify API, and OpenAI API
         </p>
