@@ -21,8 +21,8 @@ const Bio = () => (
             </div>
             <div>
                 <h2 className="text-2xl font-bold text-center pb-6">
-                    I'm a Senior Front End Engineer with 7+ years of
-                    professional experience.
+                    I'm a Senior Front End Engineer with 8 years of professional
+                    experience.
                 </h2>
                 <div className="text-center pb-6">
                     <p>

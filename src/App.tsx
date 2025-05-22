@@ -1,6 +1,7 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Bio from './pages/bio';
 import Projects from './pages/projects';
+import PromptMusic from './pages/projects/prompt-music';
 import Betslip from './pages/projects/betslip';
 import MyAction from './pages/projects/my-action';
 import ExpertPicks from './pages/projects/expert-picks';
@@ -19,6 +20,12 @@ const App = () => {
                 <Route path="/" element={<Bio />} />
 
                 <Route path="/projects" element={<Projects />} />
+
+                <Route
+                    path="/projects/prompt-music"
+                    element={<PromptMusic />}
+                />
+
                 <Route path="/projects/betslip" element={<Betslip />} />
                 <Route path="/projects/my-action" element={<MyAction />} />
                 <Route
