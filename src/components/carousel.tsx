@@ -5,6 +5,7 @@ type CarouselProps = {
         src: string;
         alt: string;
         caption?: string;
+        isVideo?: boolean;
     }>;
 };
 
@@ -18,16 +19,33 @@ const Carousel = ({ images }: CarouselProps) => {
     return (
         <div className="flex flex-col justify-center items-center gap-4">
             <div className="relative w-[400px] h-[300px]">
-                {images.map((image, i) => (
-                    <img
-                        key={i}
-                        src={`${process.env.PUBLIC_URL}${image.src}`}
-                        alt={image.alt}
-                        className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
-                            i === index ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                        }`}
-                    />
-                ))}
+                {images.map((image, i) =>
+                    image.isVideo ? (
+                        <video
+                            key={i}
+                            className={`transition-opacity duration-700 ease-in-out ${
+                                i === index
+                                    ? 'opacity-100 z-10'
+                                    : 'opacity-0 z-0'
+                            }`}
+                            controls
+                        >
+                            <source src={image.src} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    ) : (
+                        <img
+                            key={i}
+                            src={image.src}
+                            alt={image.alt}
+                            className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
+                                i === index
+                                    ? 'opacity-100 z-10'
+                                    : 'opacity-0 z-0'
+                            }`}
+                        />
+                    )
+                )}
             </div>
             <p className="font-medium">
                 {images[index]?.caption || images[index].alt}

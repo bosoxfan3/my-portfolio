@@ -24,6 +24,12 @@ const Projects = () => (
                     shortDescription="This app allows users to generate a playlist based on a text input. If they like the playlist, they can authorize the app to access their Spotify account and save the playlist to their own Spotify."
                     route="/projects/personal/prompt-music"
                 />
+                <ProjectCard
+                    title="Patient Intake Voice Agent"
+                    image="/assets/personal/appointment-scheduler/main.png"
+                    shortDescription="A telephony-based AI agent that guides users through a simulated patient intake process over the phone."
+                    route="/projects/personal/appointment-scheduler"
+                />
             </div>
         </div>
         <div>
