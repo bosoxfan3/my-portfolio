@@ -67,7 +67,7 @@ const BoredBeforeBoard = () => (
                 time. This app allows users to get up-to-the-minute updates on
                 the schedules of BART (Bay Area Rapid Transit) trains, which
                 surprisingly are not always displayed at the stations
-                themselves. I added a manifest.json to keep it available for
+                themselves. I updated the project to keep it available for
                 downloading as an app, just as we used to do.
                 <br />
                 Additionally, since my first instinct when seeing a wait time of
@@ -105,10 +105,17 @@ const BoredBeforeBoard = () => (
             </h2>
             <ul className="list-disc list-inside space-y-1">
                 <li>
-                    There were not a lot of challenges since this app is
-                    relatively simple functionally and was already "production
-                    ready". But I did update it by hiding the API keys and
-                    adding the manifest.json
+                    The API keys are exposed on the front end, and with the
+                    current setup this is no good way to hide them and demo the
+                    project at the same time. I restricted the access of the
+                    YouTube API key to my project domain only to help mitigate
+                    exposure
+                </li>
+                <li>
+                    Newer iOS requirements meant that I needed to update some
+                    aspects of the project to maintain installability. I added a
+                    manifest.json file and service workers as well to meet
+                    current installation requirements
                 </li>
             </ul>
         </section>
