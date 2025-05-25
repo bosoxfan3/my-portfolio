@@ -1,24 +1,24 @@
 import { Link } from 'react-router-dom';
-import Carousel from '../../components/carousel';
-import Highlights from '../../components/highlights';
+import Carousel from '../../../components/carousel';
+import Highlights from '../../../components/highlights';
 
 const images = [
     {
-        src: '/assets/odds-calculators/main.png',
+        src: '/assets/action/odds-calculators/main.png',
         alt: 'The main betting odds calculator',
     },
     {
-        src: '/assets/odds-calculators/parlay.png',
+        src: '/assets/action/odds-calculators/parlay.png',
         alt: 'A parlay calculator',
     },
     {
-        src: '/assets/odds-calculators/validation.png',
+        src: '/assets/action/odds-calculators/validation.png',
         alt: 'Parlay calculator with an error',
         caption:
             'This shows a sample of the real-time validation and messaging',
     },
     {
-        src: '/assets/odds-calculators/converter.png',
+        src: '/assets/action/odds-calculators/converter.png',
         alt: 'A tool that shows the equal values for for a specific value in any odds format',
     },
 ];

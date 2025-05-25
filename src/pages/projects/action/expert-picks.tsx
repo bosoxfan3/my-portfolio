@@ -1,34 +1,34 @@
 import { Link } from 'react-router-dom';
-import Carousel from '../../components/carousel';
-import Highlights from '../../components/highlights';
+import Carousel from '../../../components/carousel';
+import Highlights from '../../../components/highlights';
 
 const images = [
     {
-        src: '/assets/expert-picks/main.png',
+        src: '/assets/action/expert-picks/main.png',
         alt: 'The main module of the expert picks page',
     },
     {
-        src: '/assets/expert-picks/detail.png',
+        src: '/assets/action/expert-picks/detail.png',
         alt: 'A partial view of what a user sees when they click into a game',
     },
     {
-        src: '/assets/expert-picks/modal.png',
+        src: '/assets/action/expert-picks/modal.png',
         alt: 'The modal that pops up when a user clicks a game',
     },
     {
-        src: '/assets/expert-picks/suggested.png',
+        src: '/assets/action/expert-picks/suggested.png',
         alt: 'Suggested experts module on the sidebar',
     },
     {
-        src: '/assets/expert-picks/popular.png',
+        src: '/assets/action/expert-picks/popular.png',
         alt: 'Popular games module from the sidebar',
     },
     {
-        src: '/assets/expert-picks/experts.png',
+        src: '/assets/action/expert-picks/experts.png',
         alt: 'A sample of the table from the top experts page',
     },
     {
-        src: '/assets/expert-picks/following.png',
+        src: '/assets/action/expert-picks/following.png',
         alt: 'What a user sees in their following feed if experts they follow have made picks',
     },
 ];

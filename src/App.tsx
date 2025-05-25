@@ -1,13 +1,13 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Bio from './pages/bio';
 import Projects from './pages/projects';
-import PromptMusic from './pages/projects/prompt-music';
-import Betslip from './pages/projects/betslip';
-import MyAction from './pages/projects/my-action';
-import ExpertPicks from './pages/projects/expert-picks';
-import OddsCalculators from './pages/projects/odds-calculators';
-import Articles from './pages/projects/articles';
-import OddsTools from './pages/projects/odds-tools';
+import PromptMusic from './pages/projects/personal/prompt-music';
+import Betslip from './pages/projects/action/betslip';
+import MyAction from './pages/projects/action/my-action';
+import ExpertPicks from './pages/projects/action/expert-picks';
+import OddsCalculators from './pages/projects/action/odds-calculators';
+import Articles from './pages/projects/action/articles';
+import OddsTools from './pages/projects/action/odds-tools';
 import Contact from './pages/contact';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -22,22 +22,31 @@ const App = () => {
                 <Route path="/projects" element={<Projects />} />
 
                 <Route
-                    path="/projects/prompt-music"
+                    path="/projects/personal/prompt-music"
                     element={<PromptMusic />}
                 />
 
-                <Route path="/projects/betslip" element={<Betslip />} />
-                <Route path="/projects/my-action" element={<MyAction />} />
+                <Route path="/projects/action/betslip" element={<Betslip />} />
                 <Route
-                    path="/projects/expert-picks"
+                    path="/projects/action/my-action"
+                    element={<MyAction />}
+                />
+                <Route
+                    path="/projects/action/expert-picks"
                     element={<ExpertPicks />}
                 />
                 <Route
-                    path="/projects/odds-calculators"
+                    path="/projects/action/odds-calculators"
                     element={<OddsCalculators />}
                 />
-                <Route path="/projects/articles" element={<Articles />} />
-                <Route path="/projects/odds-tools" element={<OddsTools />} />
+                <Route
+                    path="/projects/action/articles"
+                    element={<Articles />}
+                />
+                <Route
+                    path="/projects/action/odds-tools"
+                    element={<OddsTools />}
+                />
 
                 <Route path="/contact" element={<Contact />} />
             </Routes>

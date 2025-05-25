@@ -1,34 +1,34 @@
 import { Link } from 'react-router-dom';
-import Carousel from '../../components/carousel';
-import Highlights from '../../components/highlights';
+import Carousel from '../../../components/carousel';
+import Highlights from '../../../components/highlights';
 
 const images = [
     {
-        src: '/assets/odds-tools/main.png',
+        src: '/assets/action/odds-tools/main.png',
         alt: 'A sample of the odds table',
     },
     {
-        src: '/assets/odds-tools/markets.png',
+        src: '/assets/action/odds-tools/markets.png',
         alt: 'Showing the odds table with all available markets for a game',
     },
     {
-        src: '/assets/odds-tools/public-betting.png',
+        src: '/assets/action/odds-tools/public-betting.png',
         alt: 'Sample of the public betting page',
     },
     {
-        src: '/assets/odds-tools/signals.png',
+        src: '/assets/action/odds-tools/signals.png',
         alt: 'Sample of sharp report',
         caption:
             'The PRO Report highlights when certain thresholds have been hit for important betting factors',
     },
     {
-        src: '/assets/odds-tools/modal.png',
+        src: '/assets/action/odds-tools/modal.png',
         alt: 'A modal showing more sharp report signal data',
         caption:
             'Clicking any of the signal icons brings up a modal with more details',
     },
     {
-        src: '/assets/odds-tools/grades.png',
+        src: '/assets/action/odds-tools/grades.png',
         alt: 'A sample of the projections table',
         caption:
             'The PRO Projections table uses grades and corresponding colors to highlight recommended bets',

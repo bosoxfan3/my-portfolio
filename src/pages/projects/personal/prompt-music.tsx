@@ -1,22 +1,22 @@
 import { Link } from 'react-router-dom';
-import Carousel from '../../components/carousel';
-import Highlights from '../../components/highlights';
+import Carousel from '../../../components/carousel';
+import Highlights from '../../../components/highlights';
 
 const images = [
     {
-        src: '/assets/prompt-music/main.png',
+        src: '/assets/personal/prompt-music/main.png',
         alt: 'The user can input any text they want and generate a playlist',
     },
     {
-        src: '/assets/prompt-music/prompt.png',
+        src: '/assets/personal/prompt-music/prompt.png',
         alt: 'After authorizing Spotify, the user is shown a welcome message',
     },
     {
-        src: '/assets/prompt-music/playlist.png',
+        src: '/assets/personal/prompt-music/playlist.png',
         alt: '10 songs that are chosen based on the input are displayed to the user',
     },
     {
-        src: '/assets/prompt-music/spotify.png',
+        src: '/assets/personal/prompt-music/spotify.png',
         alt: 'If the user has authorized the app, they can save the playlist to their Spotify',
     },
 ];

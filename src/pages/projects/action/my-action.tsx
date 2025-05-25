@@ -1,36 +1,36 @@
 import { Link } from 'react-router-dom';
-import Carousel from '../../components/carousel';
-import Highlights from '../../components/highlights';
+import Carousel from '../../../components/carousel';
+import Highlights from '../../../components/highlights';
 
 const images = [
     {
-        src: '/assets/my-action/main.png',
+        src: '/assets/action/my-action/main.png',
         alt: 'The main My Action analysis',
     },
     {
-        src: '/assets/my-action/info.png',
+        src: '/assets/action/my-action/info.png',
         alt: 'User bio, current picks, and pick performance at a glance',
     },
     {
-        src: '/assets/my-action/picks.png',
+        src: '/assets/action/my-action/picks.png',
         alt: 'A list of picks',
         caption:
             'This shows how the picks were shown in the infinite list and how additional picks could be fetched',
     },
     {
-        src: '/assets/my-action/charts.png',
+        src: '/assets/action/my-action/charts.png',
         alt: 'More bet analysis modules',
     },
     {
-        src: '/assets/my-action/settings.png',
+        src: '/assets/action/my-action/settings.png',
         alt: 'More analysis modules and the ability to edit user settings',
     },
     {
-        src: '/assets/my-action/settings.png',
+        src: '/assets/action/my-action/settings.png',
         alt: 'More analysis modules and the ability to edit user settings',
     },
     {
-        src: '/assets/my-action/filters.png',
+        src: '/assets/action/my-action/filters.png',
         alt: 'A modal with inputs',
         caption:
             'These filters could be used to select a specific subset of picks to review and analyze',

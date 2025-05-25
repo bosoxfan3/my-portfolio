@@ -1,28 +1,28 @@
 import { Link } from 'react-router-dom';
-import Carousel from '../../components/carousel';
-import Highlights from '../../components/highlights';
+import Carousel from '../../../components/carousel';
+import Highlights from '../../../components/highlights';
 
 const images = [
     {
-        src: '/assets/betslip/main.png',
+        src: '/assets/action/betslip/main.png',
         alt: 'Betslip for a single game pick',
     },
     {
-        src: '/assets/betslip/parlay.png',
+        src: '/assets/action/betslip/parlay.png',
         alt: 'Betslip for a parlay pick',
     },
     {
-        src: '/assets/betslip/future.png',
+        src: '/assets/action/betslip/future.png',
         alt: 'Betslip for a futures pick',
     },
     {
-        src: '/assets/betslip/books.png',
+        src: '/assets/action/betslip/books.png',
         alt: 'Other books with odds',
         caption:
             'If other odds are available, they are shown in the betslip so the user can compare',
     },
     {
-        src: '/assets/betslip/quickslip.png',
+        src: '/assets/action/betslip/quickslip.png',
         alt: 'A quickslip QR code',
         caption:
             'If the book has Quickslip available, a user can use the QR code to go directly to the sportsbook and have that same bet pre-filled',

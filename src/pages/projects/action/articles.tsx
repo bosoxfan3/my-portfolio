@@ -1,27 +1,27 @@
 import { Link } from 'react-router-dom';
-import Carousel from '../../components/carousel';
-import Highlights from '../../components/highlights';
+import Carousel from '../../../components/carousel';
+import Highlights from '../../../components/highlights';
 
 const images = [
     {
-        src: '/assets/articles/main.png',
+        src: '/assets/action/articles/main.png',
         alt: 'A sample of an article',
     },
     {
-        src: '/assets/articles/main.png',
+        src: '/assets/action/articles/main.png',
         alt: 'Quickslip in article',
         caption: 'A user clicking this acts the same as a quickslip QR code',
     },
     {
-        src: '/assets/articles/table.png',
+        src: '/assets/action/articles/table.png',
         alt: 'Authors could put in tables with links directly to picks',
     },
     {
-        src: '/assets/articles/header.png',
+        src: '/assets/action/articles/header.png',
         alt: 'Authors had the ability to add headers like this with a one or two word snippet within their content',
     },
     {
-        src: '/assets/articles/buttons.png',
+        src: '/assets/action/articles/buttons.png',
         alt: 'Matchup buttons in an article',
         caption:
             'Another example of components dynamically inserted into content',
