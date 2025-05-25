@@ -30,6 +30,12 @@ const Projects = () => (
                     shortDescription="A telephony-based AI agent that guides users through a simulated patient intake process over the phone."
                     route="/projects/personal/appointment-scheduler"
                 />
+                <ProjectCard
+                    title="Bored Before Board"
+                    image="/assets/personal/bored-before-board/main.png"
+                    shortDescription="A BART (Bay Area Rapid Transit) train tracking app, with built in entertainment options"
+                    route="/projects/personal/bored-before-board"
+                />
             </div>
         </div>
         <div>
