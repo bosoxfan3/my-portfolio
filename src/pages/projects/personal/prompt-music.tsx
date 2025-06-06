@@ -125,7 +125,7 @@ const PromptMusic = () => (
                 'TypeScript',
                 'Vercel',
                 'Railway',
-                'ChatGPT API',
+                'OpenAI API',
                 'Spotify API',
             ]}
         />

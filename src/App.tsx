@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Bio from './pages/bio';
 import Projects from './pages/projects';
 import PromptMusic from './pages/projects/personal/prompt-music';
+import ChangelogGenerator from './pages/projects/personal/changelog-generator';
 import AppointmentScheduler from './pages/projects/personal/appointment-scheduler';
 import BoredBeforeBoard from './pages/projects/personal/bored-before-board';
 import Betslip from './pages/projects/action/betslip';
@@ -26,6 +27,10 @@ const App = () => {
                 <Route
                     path="/projects/personal/prompt-music"
                     element={<PromptMusic />}
+                />
+                <Route
+                    path="/projects/personal/changelog-generator"
+                    element={<ChangelogGenerator />}
                 />
                 <Route
                     path="/projects/personal/appointment-scheduler"

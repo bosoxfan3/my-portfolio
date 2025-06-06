@@ -25,6 +25,12 @@ const Projects = () => (
                     route="/projects/personal/prompt-music"
                 />
                 <ProjectCard
+                    title="Changelog Generator"
+                    image="/assets/personal/changelog-generator/main.png"
+                    shortDescription="Generate a changelog that can be edited/published based on a selected range of commits from a public repository"
+                    route="/projects/personal/changelog-generator"
+                />
+                <ProjectCard
                     title="Patient Intake Voice Agent"
                     image="/assets/personal/appointment-scheduler/main.png"
                     shortDescription="A telephony-based AI agent that guides users through a simulated patient intake process over the phone."
